@@ -1,80 +1,57 @@
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sara Ellen Matias Da Silva">
-    <title>Meu Futuro em Rosa</title>
+
+    <title>Meu Projeto - Sara Ellen</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <script type="module" src="js/script.js"></script>
 </head>
+
 <body>
-    <header class="cabecalho">
-        <a href="#" class="logo">✿ Meu Futuro em Rosa</a>
-        <span class="etiqueta">PROJETO INTERATIVO</span>
-    </header>
 
     <main class="caixa-principal">
-        <div class="detalhe-superior">✧ UMA JORNADA DE DESCOBERTAS ✧</div>
 
-        <h1>Meu Futuro <span>em Rosa</span></h1>
-        <p class="subtitulo">Suas escolhas de hoje podem inspirar os caminhos de amanhã.</p>
+        <h1>Uma jornada de descobertas</h1>
 
         <section class="tela-inicial">
-            <div class="icone-inicial">✿</div>
-            <span class="pequeno-titulo">UMA EXPERIÊNCIA PARA VOCÊ</span>
-            <h2>Vamos descobrir novas possibilidades?</h2>
-            <p>Responda às perguntas, explore suas ideias e descubra uma mensagem criada a partir das suas escolhas.</p>
-            <button class="iniciar-btn" type="button">Começar minha jornada <span>→</span></button>
-            <p class="aviso">Não existem respostas certas ou erradas. Escolha o que faz sentido para você!</p>
+            <p>
+                Bem-vindo(a) a uma experiência interativa!
+                Faça suas escolhas e descubra a história
+                que será construída ao longo do caminho.
+            </p>
+
+            <button class="iniciar-btn" type="button">
+                Iniciar
+            </button>
         </section>
 
-        <section class="area-jogo" hidden>
-            <div class="progresso">
-                <div class="progresso-legenda">
-                    <span>SUA JORNADA</span>
-                    <span class="contador-perguntas"></span>
-                </div>
-                <div class="progresso-trilho">
-                    <div class="progresso-preenchimento"></div>
-                </div>
-            </div>
+        <section class="caixa-perguntas mostrar"></section>
 
-            <div class="caixa-perguntas"></div>
-            <div class="caixa-alternativas"></div>
-            <p class="mensagem-ajuda">Selecione uma alternativa para continuar.</p>
+        <section class="caixa-alternativas"></section>
+
+        <section class="caixa-resultado">
+            <p class="texto-resultado"></p>
+
+            <button class="novamente-btn" type="button">
+                Jogar novamente
+            </button>
         </section>
 
-        <section class="caixa-resultado" hidden aria-live="polite">
-            <div class="icone-resultado">♡</div>
-            <span class="pequeno-titulo">SUA HISTÓRIA</span>
-            <h2>Um futuro cheio de possibilidades!</h2>
-            <p class="resultado-introducao">Esta é a mensagem que suas escolhas ajudaram a construir:</p>
-            <div class="historia-final">
-                <p class="texto-resultado"></p>
-            </div>
-            <p class="mensagem-final">Seu futuro não precisa seguir um roteiro pronto. Você pode aprender, mudar e descobrir novos caminhos!</p>
-            <button class="novamente-btn" type="button">↻ Jogar novamente</button>
-            <button class="inicio-btn" type="button">Voltar ao início</button>
-        </section>
-
-        <footer class="rodape-projeto">
-            <span>Sara Ellen Matias Da Silva</span>
-            <span>Colégio Estadual Dom Pedro II</span>
-            <span>Professor: Luiz Alessandro</span>
+        <footer class="rodape">
+            <p>Aluna: Sara Ellen Matias Da Silva</p>
+            <p>Professor: Luiz Alessandro</p>
+            <p>Colégio Estadual Dom Pedro II</p>
         </footer>
+
     </main>
 
-    <footer class="rodape">
-        <span>MEU FUTURO EM ROSA</span>
-        <span>Feito com carinho ♡</span>
-    </footer>
 </body>
+
 </html>
 ```
