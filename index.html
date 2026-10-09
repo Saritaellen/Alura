@@ -1,125 +1,80 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>O Mistério do Futuro | Sara Ellen</title>
-
-    <meta name="description" content="Uma aventura interativa e mágica criada por Sara Ellen Matias da Silva.">
+    <meta name="author" content="Sara Ellen Matias Da Silva">
+    <title>Meu Futuro em Rosa</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <script type="module" src="js/script.js"></script>
 </head>
-
 <body>
+    <header class="cabecalho">
+        <a href="#" class="logo">✿ Meu Futuro em Rosa</a>
+        <span class="etiqueta">PROJETO INTERATIVO</span>
+    </header>
 
     <main class="caixa-principal">
+        <div class="detalhe-superior">✧ UMA JORNADA DE DESCOBERTAS ✧</div>
 
-        <!-- CABEÇALHO -->
-        <header class="cabecalho">
+        <h1>Meu Futuro <span>em Rosa</span></h1>
+        <p class="subtitulo">Suas escolhas de hoje podem inspirar os caminhos de amanhã.</p>
 
-            <span class="icone">✦</span>
-
-            <p class="subtitulo">
-                UMA AVENTURA INTERATIVA
-            </p>
-
-            <h1>O Mistério do Futuro</h1>
-
-            <p class="descricao">
-                Cada escolha revela um segredo.
-                Cada decisão pode mudar tudo.
-            </p>
-
-        </header>
-
-        <!-- TELA INICIAL -->
         <section class="tela-inicial">
-
-            <div class="simbolo">🔮</div>
-
-            <h2>Você está pronta para descobrir?</h2>
-
-            <p>
-                Em um mundo cheio de mistérios, magia e possibilidades,
-                uma porta misteriosa aparece diante de você.
-            </p>
-
-            <blockquote>
-                "O futuro ainda não foi escrito.
-                Suas escolhas decidirão o que acontecerá."
-            </blockquote>
-
-            <p>
-                Explore lugares encantados, enfrente desafios e descubra
-                qual destino espera por você.
-            </p>
-
-            <button class="iniciar-btn" type="button">
-                ✨ Iniciar aventura
-            </button>
-
+            <div class="icone-inicial">✿</div>
+            <span class="pequeno-titulo">UMA EXPERIÊNCIA PARA VOCÊ</span>
+            <h2>Vamos descobrir novas possibilidades?</h2>
+            <p>Responda às perguntas, explore suas ideias e descubra uma mensagem criada a partir das suas escolhas.</p>
+            <button class="iniciar-btn" type="button">Começar minha jornada <span>→</span></button>
+            <p class="aviso">Não existem respostas certas ou erradas. Escolha o que faz sentido para você!</p>
         </section>
 
-        <!-- ÁREA DO JOGO -->
-        <section class="area-jogo">
-
+        <section class="area-jogo" hidden>
             <div class="progresso">
-                <span class="etapa-atual">
-                    Sua jornada começou!
-                </span>
-
-                <span class="estrela">✦</span>
+                <div class="progresso-legenda">
+                    <span>SUA JORNADA</span>
+                    <span class="contador-perguntas"></span>
+                </div>
+                <div class="progresso-trilho">
+                    <div class="progresso-preenchimento"></div>
+                </div>
             </div>
 
             <div class="caixa-perguntas"></div>
-
             <div class="caixa-alternativas"></div>
-
+            <p class="mensagem-ajuda">Selecione uma alternativa para continuar.</p>
         </section>
 
-        <!-- RESULTADO FINAL -->
-        <section class="caixa-resultado">
-
-            <div class="simbolo-final">🌙</div>
-
-            <h2>Seu destino foi revelado!</h2>
-
-            <p class="texto-resultado"></p>
-
-            <button class="novamente-btn" type="button">
-                ↻ Jogar novamente
-            </button>
-
+        <section class="caixa-resultado" hidden aria-live="polite">
+            <div class="icone-resultado">♡</div>
+            <span class="pequeno-titulo">SUA HISTÓRIA</span>
+            <h2>Um futuro cheio de possibilidades!</h2>
+            <p class="resultado-introducao">Esta é a mensagem que suas escolhas ajudaram a construir:</p>
+            <div class="historia-final">
+                <p class="texto-resultado"></p>
+            </div>
+            <p class="mensagem-final">Seu futuro não precisa seguir um roteiro pronto. Você pode aprender, mudar e descobrir novos caminhos!</p>
+            <button class="novamente-btn" type="button">↻ Jogar novamente</button>
+            <button class="inicio-btn" type="button">Voltar ao início</button>
         </section>
 
-        <!-- RODAPÉ ESCOLAR -->
-        <footer class="rodape">
-
-            <div class="linha-decorativa"></div>
-
-            <p>Projeto desenvolvido por</p>
-
-            <h3>Sara Ellen Matias da Silva</h3>
-
-            <p>
-                Professor: Luiz Alessandro
-            </p>
-
-            <p>
-                Colégio Estadual Dom Pedro II
-            </p>
-
-            <span class="assinatura">
-                Feito com 💜 criatividade e tecnologia
-            </span>
-
+        <footer class="rodape-projeto">
+            <span>Sara Ellen Matias Da Silva</span>
+            <span>Colégio Estadual Dom Pedro II</span>
+            <span>Professor: Luiz Alessandro</span>
         </footer>
-
     </main>
 
+    <footer class="rodape">
+        <span>MEU FUTURO EM ROSA</span>
+        <span>Feito com carinho ♡</span>
+    </footer>
 </body>
 </html>
+```
